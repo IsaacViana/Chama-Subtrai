@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+float subtrai(float num1, float num2, float num3);
+
+int main()
+{
+    float x, y, z, w;
+
+    printf("Digite o primeiro valor: \n");
+    scanf("%f", &x);
+
+    printf("Digite o segundo valor: \n");
+    scanf("%f", &y);
+
+    printf("Digite o terceiro valor: \n");
+    scanf("%f", &z);
+
+    w = subtrai(x, y, z);
+
+    printf("Este eh o resultado da subtracao dos numeros: %.2f", w);
+
+}
+
+float subtrai(float num1, float num2, float num3)
+{
+    float resultado;
+
+    resultado = num1 - num2 - num3;
+
+    return resultado;
+}
